@@ -1,0 +1,239 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.object_detection_assessment_solution"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="35" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/android/app/src/debug/AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->/Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/android/app/src/main/AndroidManifest.xml:2:5-65
+16-->/Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/android/app/src/main/AndroidManifest.xml:2:22-62
+17    <!--
+18 Required to query activities that can process text, see:
+19         https://developer.android.com/training/package-visibility and
+20         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+21
+22         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+23    -->
+24    <queries>
+24-->/Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/android/app/src/main/AndroidManifest.xml:41:5-46:15
+25        <intent>
+25-->/Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/android/app/src/main/AndroidManifest.xml:42:9-45:18
+26            <action android:name="android.intent.action.PROCESS_TEXT" />
+26-->/Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/android/app/src/main/AndroidManifest.xml:43:13-72
+26-->/Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/android/app/src/main/AndroidManifest.xml:43:21-70
+27
+28            <data android:mimeType="text/plain" />
+28-->/Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/android/app/src/main/AndroidManifest.xml:44:13-50
+28-->/Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/android/app/src/main/AndroidManifest.xml:44:19-48
+29        </intent>
+30    </queries>
+31
+32    <uses-feature android:name="android.hardware.camera.any" />
+32-->[:camera_android_camerax] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/camera_android_camerax/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-64
+32-->[:camera_android_camerax] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/camera_android_camerax/intermediates/merged_manifest/debug/AndroidManifest.xml:7:19-61
+33
+34    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+34-->[:camera_android_camerax] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/camera_android_camerax/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-71
+34-->[:camera_android_camerax] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/camera_android_camerax/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-68
+35    <uses-permission
+35-->[:camera_android_camerax] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/camera_android_camerax/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-13:38
+36        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+36-->[:camera_android_camerax] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/camera_android_camerax/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-65
+37        android:maxSdkVersion="28" />
+37-->[:camera_android_camerax] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/camera_android_camerax/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-35
+38    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+39
+40    <permission
+40-->[androidx.core:core:1.13.1] /Users/mostafaa/.gradle/caches/transforms-3/889ae3adf7a24645889ee22f4dad2cac/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+41        android:name="com.example.object_detection_assessment_solution.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+41-->[androidx.core:core:1.13.1] /Users/mostafaa/.gradle/caches/transforms-3/889ae3adf7a24645889ee22f4dad2cac/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+42        android:protectionLevel="signature" />
+42-->[androidx.core:core:1.13.1] /Users/mostafaa/.gradle/caches/transforms-3/889ae3adf7a24645889ee22f4dad2cac/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+43
+44    <uses-permission android:name="com.example.object_detection_assessment_solution.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+44-->[androidx.core:core:1.13.1] /Users/mostafaa/.gradle/caches/transforms-3/889ae3adf7a24645889ee22f4dad2cac/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+44-->[androidx.core:core:1.13.1] /Users/mostafaa/.gradle/caches/transforms-3/889ae3adf7a24645889ee22f4dad2cac/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+45
+46    <application
+47        android:name="android.app.Application"
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.13.1] /Users/mostafaa/.gradle/caches/transforms-3/889ae3adf7a24645889ee22f4dad2cac/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+49        android:debuggable="true"
+50        android:extractNativeLibs="true"
+51        android:icon="@mipmap/ic_launcher"
+52        android:label="object_detection_assessment_solution" >
+53        <activity
+54            android:name="com.example.object_detection_assessment_solution.MainActivity"
+55            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+56            android:exported="true"
+57            android:hardwareAccelerated="true"
+58            android:launchMode="singleTop"
+59            android:taskAffinity=""
+60            android:theme="@style/LaunchTheme"
+61            android:windowSoftInputMode="adjustResize" >
+62
+63            <!--
+64                 Specifies an Android theme to apply to this Activity as soon as
+65                 the Android process has started. This theme is visible to the user
+66                 while the Flutter UI initializes. After that, this theme continues
+67                 to determine the Window background behind the Flutter UI.
+68            -->
+69            <meta-data
+70                android:name="io.flutter.embedding.android.NormalTheme"
+71                android:resource="@style/NormalTheme" />
+72
+73            <intent-filter>
+74                <action android:name="android.intent.action.MAIN" />
+75
+76                <category android:name="android.intent.category.LAUNCHER" />
+77            </intent-filter>
+78        </activity>
+79        <!--
+80             Don't delete the meta-data below.
+81             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+82        -->
+83        <meta-data
+84            android:name="flutterEmbedding"
+85            android:value="2" />
+86
+87        <provider
+87-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:9-17:20
+88            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+88-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-82
+89            android:authorities="com.example.object_detection_assessment_solution.flutter.image_provider"
+89-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+90            android:exported="false"
+90-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+91            android:grantUriPermissions="true" >
+91-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-47
+92            <meta-data
+92-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-16:75
+93                android:name="android.support.FILE_PROVIDER_PATHS"
+93-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-67
+94                android:resource="@xml/flutter_image_picker_file_paths" />
+94-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-72
+95        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+96        <service
+96-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-31:19
+97            android:name="com.google.android.gms.metadata.ModuleDependencies"
+97-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-78
+98            android:enabled="false"
+98-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-36
+99            android:exported="false" >
+99-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+100            <intent-filter>
+100-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-26:29
+101                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+101-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-94
+101-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-91
+102            </intent-filter>
+103
+104            <meta-data
+104-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-30:36
+105                android:name="photopicker_activity:0:required"
+105-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-63
+106                android:value="" />
+106-->[:image_picker_android] /Users/mostafaa/AndroidStudioProjects/object_detection_assessment_solution/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-33
+107        </service>
+108        <service
+108-->[androidx.camera:camera-camera2:1.4.1] /Users/mostafaa/.gradle/caches/transforms-3/516ad300ea6a5b087ebb65d81cca7ed5/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:24:9-33:19
+109            android:name="androidx.camera.core.impl.MetadataHolderService"
+109-->[androidx.camera:camera-camera2:1.4.1] /Users/mostafaa/.gradle/caches/transforms-3/516ad300ea6a5b087ebb65d81cca7ed5/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:25:13-75
+110            android:enabled="false"
+110-->[androidx.camera:camera-camera2:1.4.1] /Users/mostafaa/.gradle/caches/transforms-3/516ad300ea6a5b087ebb65d81cca7ed5/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:26:13-36
+111            android:exported="false" >
+111-->[androidx.camera:camera-camera2:1.4.1] /Users/mostafaa/.gradle/caches/transforms-3/516ad300ea6a5b087ebb65d81cca7ed5/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:27:13-37
+112            <meta-data
+112-->[androidx.camera:camera-camera2:1.4.1] /Users/mostafaa/.gradle/caches/transforms-3/516ad300ea6a5b087ebb65d81cca7ed5/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:30:13-32:89
+113                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+113-->[androidx.camera:camera-camera2:1.4.1] /Users/mostafaa/.gradle/caches/transforms-3/516ad300ea6a5b087ebb65d81cca7ed5/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:31:17-103
+114                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+114-->[androidx.camera:camera-camera2:1.4.1] /Users/mostafaa/.gradle/caches/transforms-3/516ad300ea6a5b087ebb65d81cca7ed5/transformed/jetified-camera-camera2-1.4.1/AndroidManifest.xml:32:17-86
+115        </service>
+116
+117        <uses-library
+117-->[androidx.window:window:1.2.0] /Users/mostafaa/.gradle/caches/transforms-3/8859fd2468ade3ef2655d1f63d6737f2/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+118            android:name="androidx.window.extensions"
+118-->[androidx.window:window:1.2.0] /Users/mostafaa/.gradle/caches/transforms-3/8859fd2468ade3ef2655d1f63d6737f2/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+119            android:required="false" />
+119-->[androidx.window:window:1.2.0] /Users/mostafaa/.gradle/caches/transforms-3/8859fd2468ade3ef2655d1f63d6737f2/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+120        <uses-library
+120-->[androidx.window:window:1.2.0] /Users/mostafaa/.gradle/caches/transforms-3/8859fd2468ade3ef2655d1f63d6737f2/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+121            android:name="androidx.window.sidecar"
+121-->[androidx.window:window:1.2.0] /Users/mostafaa/.gradle/caches/transforms-3/8859fd2468ade3ef2655d1f63d6737f2/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+122            android:required="false" />
+122-->[androidx.window:window:1.2.0] /Users/mostafaa/.gradle/caches/transforms-3/8859fd2468ade3ef2655d1f63d6737f2/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+123
+124        <provider
+124-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/mostafaa/.gradle/caches/transforms-3/40a1bd5ff2ce65cd1fad055cc690d356/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+125            android:name="androidx.startup.InitializationProvider"
+125-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/mostafaa/.gradle/caches/transforms-3/40a1bd5ff2ce65cd1fad055cc690d356/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+126            android:authorities="com.example.object_detection_assessment_solution.androidx-startup"
+126-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/mostafaa/.gradle/caches/transforms-3/40a1bd5ff2ce65cd1fad055cc690d356/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+127            android:exported="false" >
+127-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/mostafaa/.gradle/caches/transforms-3/40a1bd5ff2ce65cd1fad055cc690d356/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+128            <meta-data
+128-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/mostafaa/.gradle/caches/transforms-3/40a1bd5ff2ce65cd1fad055cc690d356/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+129                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+129-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/mostafaa/.gradle/caches/transforms-3/40a1bd5ff2ce65cd1fad055cc690d356/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+130                android:value="androidx.startup" />
+130-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/mostafaa/.gradle/caches/transforms-3/40a1bd5ff2ce65cd1fad055cc690d356/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+131            <meta-data
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+132                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+133                android:value="androidx.startup" />
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+134        </provider>
+135
+136        <receiver
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+137            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+138            android:directBootAware="false"
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+139            android:enabled="true"
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+140            android:exported="true"
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+141            android:permission="android.permission.DUMP" >
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+142            <intent-filter>
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+143                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+144            </intent-filter>
+145            <intent-filter>
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+146                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+147            </intent-filter>
+148            <intent-filter>
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+149                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+150            </intent-filter>
+151            <intent-filter>
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+152                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/mostafaa/.gradle/caches/transforms-3/408a642162969e960684d9c16b2f116a/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+153            </intent-filter>
+154        </receiver>
+155    </application>
+156
+157</manifest>
