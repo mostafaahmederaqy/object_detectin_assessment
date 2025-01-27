@@ -38,7 +38,9 @@ class CameraView extends StatelessWidget {
                                border: Border.all(color: Colors.green, width: 4.0),
                              ),
                              child: Container(
-                               child: Text(provider.label),
+                               child: Text(provider.label,style:TextStyle(
+                                 color: Colors.white
+                               )),
                              ),
                            ),
                          ),

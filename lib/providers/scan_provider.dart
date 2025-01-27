@@ -103,6 +103,7 @@ class ScanProvider extends ChangeNotifier {
           }
         }
         else{
+          _message ='detecting $selectedObject';
           y = 0.0;
         }
       }
