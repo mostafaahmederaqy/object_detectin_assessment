@@ -97,6 +97,7 @@ class ScanProvider extends ChangeNotifier {
                 _message = "Move closer";
               } else {
                 _message = "Object in position";
+
                 captureAndNavigate(context, image); // Use context here
               }
           }
@@ -113,7 +114,9 @@ class ScanProvider extends ChangeNotifier {
 
   Future<void> captureAndNavigate(BuildContext context, CameraImage image) async {
     try {
-      final capturedImage = await convertCameraImageToFile(image);
+     // final capturedImage = await _cameraController.takePicture();//await convertCameraImageToFile(image);
+      final XFile picture = await _cameraController.takePicture();
+      final File capturedImage = File(picture.path); // Convert XFile to File
       final timestamp = DateTime.now().toString(); // Capture the current timestamp
 
       // Navigate to the CapturedImageScreen
